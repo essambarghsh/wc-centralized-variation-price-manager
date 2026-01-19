@@ -1,0 +1,425 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Centralized Variation Price Manager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-18 23:40+0000\n"
+"PO-Revision-Date: 2026-01-19 01:17+0000\n"
+"Last-Translator: Essam Barghsh\n"
+"Language-Team: العربية\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100 >= 3 "
+"&& n%100<=10 ? 3 : n%100 >= 11 && n%100<=99 ? 4 : 5;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.1; wp-6.9; php-8.2.29\n"
+"X-Domain: wc-centralized-variation-price-manager"
+
+#. %d: number of variations skipped
+#: includes/class-cvpm-background-processor.php:333
+#: includes/class-cvpm-admin.php:744
+msgid "%d already correct"
+msgstr "%d صحيح بالفعل"
+
+#. %d: number of variations with different prices
+#: includes/class-cvpm-admin.php:402
+msgid "%d differ"
+msgstr "يختلف %d"
+
+#: includes/class-cvpm-background-processor.php:336
+msgid "%d invalid"
+msgstr "%d غير صالح"
+
+#. %d: number of unique variation combinations
+#: includes/class-cvpm-admin.php:338
+msgid "%d unique variation combination found."
+msgid_plural "%d unique variation combinations found."
+msgstr[0] "تم العثور على %d من الانواع الفريدة"
+msgstr[1] "تم العثور على %d من الانواع الفريدة"
+msgstr[2] "تم العثور على %d من الانواع الفريدة"
+msgstr[3] "تم العثور على %d من الانواع الفريدة"
+msgstr[4] "تم العثور على %d من الانواع الفريدة"
+msgstr[5] "تم العثور على %d من الانواع الفريدة"
+
+#. %d: number of variations
+#: includes/class-cvpm-admin.php:372
+msgid "%d variation"
+msgid_plural "%d variations"
+msgstr[0] "%d نوع"
+msgstr[1] "%d نوع"
+msgstr[2] "%d أنواع"
+msgstr[3] "%d أنواع"
+msgstr[4] "%d أنواع"
+msgstr[5] "%d أنواع"
+
+#. %d: number of variations
+#: includes/class-cvpm-admin.php:604
+msgid "%d variation already has the correct price."
+msgid_plural "%d variations already have the correct prices."
+msgstr[0] "يحتوي النوع %d بالفعل على السعر الصحيح."
+msgstr[1] "يحتوي النوع %d بالفعل على السعر الصحيح."
+msgstr[2] "تحتوي الأنواع %d بالفعل على السعر الصحيح."
+msgstr[3] "تحتوي الأنواع %d بالفعل على السعر الصحيح."
+msgstr[4] "تحتوي الأنواع %d بالفعل على السعر الصحيح."
+msgstr[5] "تحتوي الأنواع %d بالفعل على السعر الصحيح."
+
+#. %d: number of variations updated
+#: includes/class-cvpm-admin.php:732
+msgid "%d variation updated"
+msgid_plural "%d variations updated"
+msgstr[0] "تم تحديث %d"
+msgstr[1] "تم تحديث %d"
+msgstr[2] "تم تحديث %d"
+msgstr[3] "تم تحديث %d"
+msgstr[4] "تم تحديث %d"
+msgstr[5] "تم تحديث %d"
+
+#. %s: WooCommerce plugin name
+#: wc-centralized-variation-price-manager.php:55
+#, php-format
+msgid "%s requires WooCommerce to be installed and active."
+msgstr "%s يتطلب تثبيت وتفعيل WooCommerce."
+
+#: includes/class-cvpm-background-processor.php:202
+msgid ", invalid: %d"
+msgstr "غير صالح: %d"
+
+#: includes/class-cvpm-admin.php:360
+msgid "Actions"
+msgstr "الإجراءات"
+
+#: includes/class-cvpm-admin.php:110
+msgid "Active Background Jobs"
+msgstr "عمليات خلفية نشطة"
+
+#: includes/class-cvpm-background-processor.php:395
+msgid "All variations updated successfully!"
+msgstr ""
+"تم تحديث جميع الانواع بنجاح!\n"
+
+#: includes/class-cvpm-admin.php:98
+msgid "An error occurred. Please try again."
+msgstr "حدث خطأ. يرجى المحاولة مرة أخرى."
+
+#: includes/class-cvpm-admin.php:108
+msgid ""
+"Are you sure you want to cancel? Some variations may have already been "
+"updated."
+msgstr ""
+"هل أنت متأكد من رغبتك في الإلغاء؟ قد تكون بعض الانواع قد تم تحديثها بالفعل.\n"
+
+#: includes/class-cvpm-admin.php:313
+msgid "ATTRIBUTE TERMS/VALUES:"
+msgstr "ATTRIBUTE TERMS/VALUES:"
+
+#: includes/class-cvpm-admin.php:312
+msgid "ATTRIBUTES:"
+msgstr "ATTRIBUTES:"
+
+#: includes/class-cvpm-admin.php:317
+msgid "BACKUP YOUR DATABASE BEFORE MAKING BULK CHANGES!"
+msgstr "BACKUP YOUR DATABASE BEFORE MAKING BULK CHANGES!"
+
+#. 1: batch number, 2: error message
+#: includes/class-cvpm-background-processor.php:307
+#, php-format
+msgid "Batch %1$d: Error - %2$s"
+msgstr "الدفعة %1$d: خطأ - %2$s"
+
+#. 1: batch number, 2: skipped same price, 3: skipped invalid
+#: includes/class-cvpm-background-processor.php:199
+#, php-format
+msgid "Batch %1$d: No updates needed (already correct: %2$d%3$s)"
+msgstr "الدفعة %1$d: لا حاجة إلى تحديثات (صحيحة بالفعل: %2$d%3$s)"
+
+#. 1: batch number, 2: count updated, 3: skip details
+#: includes/class-cvpm-background-processor.php:341
+#, php-format
+msgid "Batch %1$d: Updated %2$d variations%3$s"
+msgstr "الدفعة %1$d: تم تحديث %2$d الانواع %3$s"
+
+#: includes/class-cvpm-admin.php:310
+msgid ""
+"Before using this plugin, you must understand how WooCommerce variations "
+"work:"
+msgstr ""
+"Before using this plugin, you must understand how WooCommerce variations "
+"work:"
+
+#: includes/class-cvpm-admin.php:104 includes/class-cvpm-admin.php:477
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: includes/class-cvpm-admin.php:107
+msgid "Cancelled"
+msgstr "تم الإلغاء"
+
+#: includes/class-cvpm-admin.php:328
+msgid "Clear"
+msgstr "مسح"
+
+#: includes/class-cvpm-admin.php:105 includes/class-cvpm-admin.php:459
+#: includes/class-cvpm-admin.php:478
+msgid "Close"
+msgstr "إغلاق"
+
+#: includes/class-cvpm-admin.php:106
+msgid "Completed!"
+msgstr "مكتمل!"
+
+#: includes/class-cvpm-admin.php:358
+msgid "Current Price"
+msgstr "السعر الحالي"
+
+#: includes/class-cvpm-admin.php:707
+msgid "Database error occurred."
+msgstr "حدث خطأ في قاعدة البيانات."
+
+#. Author of the plugin
+msgid "Essam Barghsh"
+msgstr "Essam Barghsh"
+
+#: includes/class-cvpm-admin.php:858
+msgid "Failed to cancel job."
+msgstr "فشل إلغاء المهمة."
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://esssam.com"
+msgstr "https://esssam.com"
+
+#: includes/class-cvpm-admin.php:309
+msgid "IMPORTANT: Understanding WooCommerce Variations"
+msgstr "IMPORTANT: Understanding WooCommerce Variations"
+
+#: includes/class-cvpm-admin.php:825 includes/class-cvpm-admin.php:852
+msgid "Invalid job ID."
+msgstr ""
+"معرف الوظيفة غير صالح.\n"
+
+#: includes/class-cvpm-background-processor.php:447
+msgid "Job cancelled by user."
+msgstr ""
+"تم إلغاء الطلب من قبل المستخدم.\n"
+
+#: includes/class-cvpm-admin.php:862
+msgid "Job cancelled."
+msgstr ""
+"تم إلغاء الطلب.\n"
+
+#: includes/class-cvpm-admin.php:831
+msgid "Job not found."
+msgstr ""
+"لم يتم العثور على الوظيفة.\n"
+
+#: includes/class-cvpm-admin.php:449
+msgid ""
+"Make sure you have variable products with variations in your WooCommerce "
+"store."
+msgstr ""
+"تأكد من وجود منتجات متغيرة مع اختلافات في متجر WooCommerce الخاص بك.\n"
+
+#. Description of the plugin
+msgid ""
+"Manage WooCommerce product variation prices from a centralized interface. "
+"Update prices for all products with the same variation combination at once."
+msgstr ""
+"قم بإدارة أسعار منتجات WooCommerce المتنوعة من خلال واجهة مركزية. قم بتحديث "
+"أسعار جميع المنتجات التي لها نفس التركيبة المتنوعة في وقت واحد."
+
+#: includes/class-cvpm-admin.php:111
+msgid "No active background jobs."
+msgstr ""
+"لا توجد وظائف شاغرة في الخلفية.\n"
+
+#: includes/class-cvpm-admin.php:561
+msgid "No valid variations found."
+msgstr ""
+"لم يتم العثور على أي انواع صالحة.\n"
+
+#: includes/class-cvpm-admin.php:445
+msgid "No variation combinations found."
+msgstr ""
+"لم يتم العثور على أي أنواع.\n"
+
+#: includes/class-cvpm-admin.php:525 includes/class-cvpm-admin.php:781
+msgid "No variations selected."
+msgstr "لم يتم تحديد أي أنواع."
+
+#: includes/class-cvpm-admin.php:495 includes/class-cvpm-admin.php:514
+#: includes/class-cvpm-admin.php:771 includes/class-cvpm-admin.php:819
+#: includes/class-cvpm-admin.php:846 includes/class-cvpm-admin.php:875
+msgid "Permission denied."
+msgstr "تم رفض الإذن."
+
+#: includes/class-cvpm-admin.php:99
+msgid "Please enter valid prices (numbers only)."
+msgstr "يرجى إدخال سعر صحيحة (أرقام فقط)."
+
+#: includes/class-cvpm-admin.php:806
+msgid "Price update started."
+msgstr "بدأ تحديث الأسعار."
+
+#: includes/class-cvpm-admin.php:102
+#, php-format
+msgid "Processing %1$d of %2$d variations"
+msgstr "معالجة %1$d من %2$d انواع"
+
+#: includes/class-cvpm-admin.php:112
+msgid "Processing..."
+msgstr "جاري المعالجة..."
+
+#: includes/class-cvpm-admin.php:314
+msgid "PRODUCT VARIATIONS:"
+msgstr "PRODUCT VARIATIONS:"
+
+#: includes/class-cvpm-admin.php:359
+msgid "Products"
+msgstr "المنتجات"
+
+#: includes/class-cvpm-admin.php:356
+msgid "Regular Price"
+msgstr "السعر العادي"
+
+#: includes/class-cvpm-admin.php:382
+msgid "Regular price"
+msgstr "السعر العادي"
+
+#: includes/class-cvpm-admin.php:538 includes/class-cvpm-admin.php:794
+msgid "Regular price cannot be negative."
+msgstr "السعر العادي لا يمكن أن يكون سالباً."
+
+#: includes/class-cvpm-admin.php:530 includes/class-cvpm-admin.php:786
+msgid "Regular price must be a valid number."
+msgstr "يجب أن يكون السعر العادي رقماً صحيحاً."
+
+#: includes/class-cvpm-admin.php:357
+msgid "Sale Price"
+msgstr "سعر التخفيض"
+
+#: includes/class-cvpm-admin.php:389
+msgid "Sale price"
+msgstr "سعر التخفيض"
+
+#: includes/class-cvpm-admin.php:542 includes/class-cvpm-admin.php:798
+msgid "Sale price cannot be negative."
+msgstr "لا يمكن أن يكون سعر التخفيض سالباً."
+
+#: includes/class-cvpm-admin.php:534 includes/class-cvpm-admin.php:790
+msgid "Sale price must be a valid number."
+msgstr "يجب أن يكون سعر البيع رقماً صالحاً."
+
+#: includes/class-cvpm-admin.php:326
+msgid "Search"
+msgstr "بحث"
+
+#: includes/class-cvpm-admin.php:325
+msgid "Search variations..."
+msgstr "البحث عن الانواع..."
+
+#: includes/class-cvpm-admin.php:324
+msgid "Search variations:"
+msgstr "البحث"
+
+#. %d: number of variations
+#: includes/class-cvpm-background-processor.php:86
+msgid "Started processing %d variations..."
+msgstr "بدء معالجة %d أنواع..."
+
+#: includes/class-cvpm-admin.php:467
+msgid "Starting..."
+msgstr "جاري البدء..."
+
+#. %d: number of products
+#: includes/class-cvpm-background-processor.php:350
+msgid "Synced %d parent products"
+msgstr "تمت مزامنة %d منتجًا رئيسيًا"
+
+#: includes/class-cvpm-admin.php:314
+msgid ""
+"These are combinations of attribute values assigned to variable products "
+"with specific prices"
+msgstr "هذه هي مجموعات من قيم السمات المخصصة لمنتجات متغيرة بأسعار محددة."
+
+#: includes/class-cvpm-admin.php:312
+msgid ""
+"These are created under Products → Attributes (e.g., \"Size\", \"Color\")"
+msgstr "يتم إنشاؤها ضمن المنتجات → السمات (على سبيل المثال، ”الحجم“ و”اللون“)"
+
+#: includes/class-cvpm-admin.php:313
+msgid ""
+"These are the values for each attribute (e.g., for \"Size\": Small, Medium, "
+"Large)"
+msgstr ""
+"هذه هي القيم لكل سمة (على سبيل المثال، بالنسبة لـ ”الحجم“: صغير، متوسط، كبير)"
+
+#: includes/class-cvpm-admin.php:316
+msgid ""
+"This plugin updates prices based on SPECIFIC VARIATION COMBINATIONS in your "
+"products, NOT attribute terms directly. The same attribute value (e.g., "
+"\"Red\") may have different prices in different products or when combined "
+"with other attributes."
+msgstr ""
+"تقوم هذه الإضافة بتحديث الأسعار بناءً على مجموعات الأنواع المحددة في "
+"منتجاتك، وليس بناءً على مصطلحات السمات مباشرةً. قد يكون لنفس قيمة السمة (على "
+"سبيل المثال، ”أحمر“) أسعار مختلفة في منتجات مختلفة أو عند دمجها مع سمات أخرى."
+
+#: includes/class-cvpm-admin.php:95
+msgid "This will update %d variation(s). Continue?"
+msgstr "سيؤدي هذا إلى تحديث %d من الانواع. هل تريد المتابعة؟"
+
+#: includes/class-cvpm-admin.php:447
+msgid "Try a different search term or"
+msgstr "جرّب مصطلح بحث مختلف أو"
+
+#: includes/class-cvpm-admin.php:97 includes/class-cvpm-admin.php:411
+msgid "Update"
+msgstr "تحديث"
+
+#: includes/class-cvpm-admin.php:101 includes/class-cvpm-admin.php:458
+msgid "Updating Prices"
+msgstr "تحديث الأسعار"
+
+#: includes/class-cvpm-admin.php:96
+msgid "Updating..."
+msgstr "جاري التحديث..."
+
+#: includes/class-cvpm-admin.php:355
+msgid "Variation Combination"
+msgstr "الأنواع"
+
+#: includes/class-cvpm-admin.php:53 includes/class-cvpm-admin.php:54
+msgid "Variation Prices"
+msgstr "سعر النوع"
+
+#: includes/class-cvpm-admin.php:113
+msgid "variations"
+msgstr "الأنواع"
+
+#: includes/class-cvpm-admin.php:398
+msgid "Variations with different prices"
+msgstr "أنواع مع اسعار مختلفة"
+
+#: includes/class-cvpm-admin.php:447
+msgid "view all variations"
+msgstr "عرض جميع الأنواع"
+
+#. Name of the plugin
+#: includes/class-cvpm-admin.php:305
+msgid "WC Centralized Variation Price Manager"
+msgstr "مدير الأسعار المركزي لـ ووكمرس"
+
+#: wc-centralized-variation-price-manager.php:100
+msgid ""
+"WC Centralized Variation Price Manager requires WooCommerce to be installed "
+"and active."
+msgstr "يتطلب مدير الأسعار المركزي لـ ووكمرس تثبيت WooCommerce وتفعيله."
+
+#: includes/class-cvpm-admin.php:103 includes/class-cvpm-admin.php:473
+msgid "You can close this page. Updates will continue in the background."
+msgstr "يمكنك إغلاق هذه الصفحة. ستستمر التحديثات في الخلفية."
+
+#: includes/class-cvpm-admin.php:292
+msgid "You do not have sufficient permissions to access this page."
+msgstr "ليس لديك أذونات كافية للوصول إلى هذه الصفحة."

@@ -1,10 +1,10 @@
 /**
- * Centralized Variation Price Manager - Admin Styles
+ * WC Centralized Variation Price Manager - Admin Styles
  */
 
 /* Wrapper */
 .cvpm-wrap {
-    max-width: 1400px;
+    max-width: 100%;
 }
 
 /* Warning Box */
@@ -65,11 +65,6 @@
     margin: 0;
 }
 
-.cvpm-search-form input[type="search"] {
-    width: 300px;
-    padding: 5px 10px;
-}
-
 /* Results Count */
 .cvpm-results-count {
     color: #646970;
@@ -92,18 +87,7 @@
     vertical-align: middle;
 }
 
-.cvpm-table .column-combination {
-    width: 35%;
-}
-
-.cvpm-table .column-regular-price,
-.cvpm-table .column-sale-price,
-.cvpm-table .column-current-price {
-    width: 12%;
-}
-
 .cvpm-table .column-products {
-    width: 8%;
     text-align: center;
 }
 
@@ -112,10 +96,48 @@
     text-align: center;
 }
 
+/* Combination Display */
+.cvpm-combination-display {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.cvpm-attr-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cvpm-attr-slug {
+    font-size: 14px;
+    color: #787c82;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.cvpm-attr-value {
+    font-weight: 600;
+    color: #1d2327;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cvpm-attr-separator {
+    color: #c3c4c7;
+    font-weight: 300;
+    padding: 0 4px;
+}
+
 /* Variation Count */
 .cvpm-variation-count {
     color: #787c82;
     font-size: 12px;
+    display: block;
+    margin-top: 4px;
 }
 
 /* Price Inputs */
@@ -155,7 +177,7 @@
     display: inline-block;
     background: #f0f0f1;
     padding: 4px 10px;
-    border-radius: 10px;
+    border-radius: 9999px;
     font-size: 12px;
     font-weight: 600;
 }
@@ -275,8 +297,471 @@
     .cvpm-price-input {
         max-width: 100%;
     }
-    
-    .cvpm-search-form input[type="search"] {
-        width: 200px;
+}
+
+/* =====================================================
+   Progress Dialog Styles
+   ===================================================== */
+
+/* Body class when dialog is open */
+body.cvpm-dialog-open {
+    overflow: hidden;
+}
+
+/* Overlay */
+.cvpm-progress-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Dialog */
+.cvpm-progress-dialog {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 550px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    animation: cvpm-dialog-appear 0.2s ease-out;
+}
+
+@keyframes cvpm-dialog-appear {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(-10px);
     }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Dialog Header */
+.cvpm-progress-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.cvpm-progress-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.cvpm-progress-close {
+    background: none;
+    border: none;
+    font-size: 28px;
+    line-height: 1;
+    color: #787c82;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background-color 0.15s ease;
+}
+
+.cvpm-progress-close:hover {
+    background: #f0f0f1;
+    color: #1d2327;
+}
+
+/* Dialog Body */
+.cvpm-progress-body {
+    padding: 20px;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Progress Bar Container */
+.cvpm-progress-bar-container {
+    background: #f0f0f1;
+    border-radius: 4px;
+    height: 28px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cvpm-progress-bar {
+    background: linear-gradient(90deg, #2271b1 0%, #135e96 100%);
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+}
+
+.cvpm-progress-percentage {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Status Text */
+.cvpm-progress-status {
+    margin: 12px 0 16px;
+    font-size: 14px;
+    color: #646970;
+    text-align: center;
+}
+
+/* Completed state */
+.cvpm-progress-overlay.cvpm-completed .cvpm-progress-bar {
+    background: linear-gradient(90deg, #00a32a 0%, #007017 100%);
+}
+
+.cvpm-progress-overlay.cvpm-completed .cvpm-progress-status {
+    color: #00a32a;
+    font-weight: 600;
+}
+
+/* Cancelled state */
+.cvpm-progress-overlay.cvpm-cancelled .cvpm-progress-bar {
+    background: linear-gradient(90deg, #dba617 0%, #996800 100%);
+}
+
+.cvpm-progress-overlay.cvpm-cancelled .cvpm-progress-status {
+    color: #996800;
+    font-weight: 600;
+}
+
+/* Error state */
+.cvpm-progress-overlay.cvpm-error .cvpm-progress-bar {
+    background: linear-gradient(90deg, #d63638 0%, #b32d2e 100%);
+}
+
+.cvpm-progress-overlay.cvpm-error .cvpm-progress-status {
+    color: #d63638;
+    font-weight: 600;
+}
+
+/* Logs Container */
+.cvpm-progress-logs {
+    flex: 1;
+    min-height: 150px;
+    max-height: 200px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    background: #f6f7f7;
+    overflow: hidden;
+}
+
+.cvpm-logs-container {
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.cvpm-log-entry {
+    padding: 2px 0;
+    color: #50575e;
+    word-break: break-word;
+}
+
+.cvpm-log-time {
+    color: #787c82;
+}
+
+/* Background Note */
+.cvpm-progress-note {
+    margin: 16px 0 0;
+    padding: 12px;
+    background: #f0f6fc;
+    border: 1px solid #c3c4c7;
+    border-left: 4px solid #2271b1;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #1d2327;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.cvpm-progress-note .dashicons {
+    color: #2271b1;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* Dialog Footer */
+.cvpm-progress-footer {
+    padding: 16px 20px;
+    border-top: 1px solid #dcdcde;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cvpm-progress-footer .button {
+    min-width: 80px;
+}
+
+/* Responsive adjustments for dialog */
+@media screen and (max-width: 600px) {
+    .cvpm-progress-overlay {
+        padding: 10px;
+    }
+
+    .cvpm-progress-dialog {
+        max-height: 95vh;
+    }
+
+    .cvpm-progress-header {
+        padding: 12px 16px;
+    }
+
+    .cvpm-progress-body {
+        padding: 16px;
+    }
+
+    .cvpm-progress-logs {
+        min-height: 120px;
+        max-height: 150px;
+    }
+
+    .cvpm-progress-footer {
+        padding: 12px 16px;
+    }
+}
+
+/* =====================================================
+   Active Background Jobs Card
+   ===================================================== */
+
+#cvpm-active-jobs-container {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cvpm-active-jobs-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-left: 4px solid #2271b1;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-bottom: 15px;
+}
+
+.cvpm-active-jobs-card.has-jobs {
+    border-left-color: #dba617;
+    background: #fffbeb;
+}
+
+.cvpm-active-jobs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.cvpm-active-jobs-title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d2327;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cvpm-active-jobs-title .dashicons {
+    color: #dba617;
+    animation: cvpm-pulse 1.5s infinite;
+}
+
+@keyframes cvpm-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.cvpm-jobs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cvpm-job-item {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    padding: 12px 16px;
+}
+
+.cvpm-job-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cvpm-job-info {
+    font-size: 13px;
+    color: #50575e;
+}
+
+.cvpm-job-info strong {
+    color: #1d2327;
+}
+
+.cvpm-job-cancel-btn {
+    font-size: 12px;
+    padding: 2px 8px;
+    height: auto;
+}
+
+.cvpm-job-progress-container {
+    background: #f0f0f1;
+    border-radius: 3px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.cvpm-job-progress-bar {
+    background: linear-gradient(90deg, #dba617 0%, #996800 100%);
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+}
+
+.cvpm-job-progress-percentage {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.cvpm-job-logs-toggle {
+    background: none;
+    border: none;
+    color: #2271b1;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.cvpm-job-logs-toggle:hover {
+    color: #135e96;
+}
+
+.cvpm-job-logs {
+    margin-top: 10px;
+    background: #f6f7f7;
+    border: 1px solid #dcdcde;
+    border-radius: 3px;
+    max-height: 120px;
+    overflow-y: auto;
+    padding: 8px;
+    font-family: monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    display: none;
+}
+
+.cvpm-job-logs.expanded {
+    display: block;
+}
+
+.cvpm-job-log-entry {
+    color: #50575e;
+    padding: 1px 0;
+}
+
+.cvpm-job-log-time {
+    color: #787c82;
+}
+
+/* =====================================================
+   Processing Row States
+   ===================================================== */
+
+.cvpm-table tr.cvpm-processing {
+    background-color: #fffbeb !important;
+    position: relative;
+}
+
+.cvpm-table tr.cvpm-processing td {
+    opacity: 0.7;
+}
+
+.cvpm-table tr.cvpm-processing .cvpm-price-input {
+    pointer-events: none;
+    background-color: #f6f7f7;
+}
+
+.cvpm-table tr.cvpm-processing .cvpm-update-btn {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.cvpm-processing-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #996800;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.cvpm-processing-label .cvpm-spinner {
+    border-top-color: #996800;
+    width: 12px;
+    height: 12px;
+    border-width: 2px;
+    margin-right: 0;
+}
+
+/* =====================================================
+   Inconsistent Prices Badge
+   ===================================================== */
+
+.cvpm-inconsistent-badge {
+    display: inline-block;
+    background: #fcf0f1;
+    color: #d63638;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 8px;
+    cursor: help;
+    border: 1px solid #f0c6c8;
+}
+
+.cvpm-inconsistent-badge:hover {
+    background: #f8d7da;
 }

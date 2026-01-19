@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name: Centralized Variation Price Manager
- * Plugin URI: https://example.com/centralized-variation-price-manager
+ * Plugin Name: WC Centralized Variation Price Manager
+ * Plugin URI: https://esssam.com
  * Description: Manage WooCommerce product variation prices from a centralized interface. Update prices for all products with the same variation combination at once.
  * Version: 1.0.0
- * Author: Developer
- * Author URI: https://example.com
+ * Author: Essam Barghsh
+ * Author URI: https://esssam.com
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: centralized-variation-price-manager
+ * Text Domain: wc-centralized-variation-price-manager
  * Domain Path: /languages
  * Requires at least: 5.0
  * Requires PHP: 7.2
@@ -52,8 +52,8 @@ function cvpm_woocommerce_missing_notice() {
             <?php
             printf(
                 /* translators: %s: WooCommerce plugin name */
-                esc_html__( '%s requires WooCommerce to be installed and active.', 'centralized-variation-price-manager' ),
-                '<strong>Centralized Variation Price Manager</strong>'
+                esc_html__( '%s requires WooCommerce to be installed and active.', 'wc-centralized-variation-price-manager' ),
+                '<strong>WC Centralized Variation Price Manager</strong>'
             );
             ?>
         </p>
@@ -73,12 +73,13 @@ function cvpm_init() {
 
     // Load text domain for translations
     load_plugin_textdomain(
-        'centralized-variation-price-manager',
+        'wc-centralized-variation-price-manager',
         false,
         dirname( CVPM_PLUGIN_BASENAME ) . '/languages'
     );
 
-    // Include admin class
+    // Include required classes
+    require_once CVPM_PLUGIN_DIR . 'includes/class-cvpm-background-processor.php';
     require_once CVPM_PLUGIN_DIR . 'includes/class-cvpm-admin.php';
 
     // Initialize admin
@@ -96,7 +97,7 @@ function cvpm_activate() {
     if ( ! cvpm_is_woocommerce_active() ) {
         deactivate_plugins( CVPM_PLUGIN_BASENAME );
         wp_die(
-            esc_html__( 'Centralized Variation Price Manager requires WooCommerce to be installed and active.', 'centralized-variation-price-manager' ),
+            esc_html__( 'WC Centralized Variation Price Manager requires WooCommerce to be installed and active.', 'wc-centralized-variation-price-manager' ),
             'Plugin Activation Error',
             array( 'back_link' => true )
         );

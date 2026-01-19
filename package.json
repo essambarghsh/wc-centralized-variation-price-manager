@@ -1,0 +1,27 @@
+{
+  "name": "wc-centralized-variation-price-manager",
+  "version": "1.0.0",
+  "description": "Manage WooCommerce product variation prices from a centralized interface. Update prices for all products with the same variation combination at once.",
+  "main": "wc-centralized-variation-price-manager.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/essambarghsh/wc-centralized-variation-price-manager.git"
+  },
+  "keywords": [
+    "wordpress",
+    "woocommerce",
+    "price",
+    "manager",
+    "variations",
+    "products"
+  ],
+  "author": "Essam Barghsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/essambarghsh/wc-centralized-variation-price-manager/issues"
+  },
+  "homepage": "https://github.com/essambarghsh/wc-centralized-variation-price-manager#readme"
+}
