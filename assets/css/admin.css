@@ -1,0 +1,282 @@
+/**
+ * Centralized Variation Price Manager - Admin Styles
+ */
+
+/* Wrapper */
+.cvpm-wrap {
+    max-width: 1400px;
+}
+
+/* Warning Box */
+.cvpm-warning-box {
+    background: #fff8e5;
+    border: 1px solid #ffb900;
+    border-left-width: 4px;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 3px;
+}
+
+.cvpm-warning-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #826200;
+    font-size: 16px;
+}
+
+.cvpm-warning-box p {
+    margin: 10px 0;
+    color: #646970;
+}
+
+.cvpm-warning-box ol {
+    margin: 10px 0 10px 20px;
+    padding-left: 10px;
+}
+
+.cvpm-warning-box li {
+    margin-bottom: 8px;
+    color: #646970;
+}
+
+.cvpm-warning-box strong {
+    color: #1d2327;
+}
+
+.cvpm-backup-warning {
+    background: #fcf0f1;
+    border: 1px solid #d63638;
+    padding: 10px 15px;
+    margin-top: 15px !important;
+    border-radius: 3px;
+    color: #d63638 !important;
+    font-weight: 600;
+}
+
+/* Search Form */
+.cvpm-search-form {
+    margin: 20px 0;
+}
+
+.cvpm-search-form .search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.cvpm-search-form input[type="search"] {
+    width: 300px;
+    padding: 5px 10px;
+}
+
+/* Results Count */
+.cvpm-results-count {
+    color: #646970;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+/* Table */
+.cvpm-table {
+    margin-top: 15px;
+}
+
+.cvpm-table th {
+    font-weight: 600;
+    padding: 12px 10px;
+}
+
+.cvpm-table td {
+    padding: 12px 10px;
+    vertical-align: middle;
+}
+
+.cvpm-table .column-combination {
+    width: 35%;
+}
+
+.cvpm-table .column-regular-price,
+.cvpm-table .column-sale-price,
+.cvpm-table .column-current-price {
+    width: 12%;
+}
+
+.cvpm-table .column-products {
+    width: 8%;
+    text-align: center;
+}
+
+.cvpm-table .column-actions {
+    width: 10%;
+    text-align: center;
+}
+
+/* Variation Count */
+.cvpm-variation-count {
+    color: #787c82;
+    font-size: 12px;
+}
+
+/* Price Inputs */
+.cvpm-price-input {
+    width: 100%;
+    max-width: 120px;
+    padding: 6px 8px;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.cvpm-price-input:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+.cvpm-price-input.changed {
+    border-color: #2271b1;
+    background-color: #f0f6fc;
+}
+
+.cvpm-price-input.error {
+    border-color: #d63638;
+    background-color: #fcf0f1;
+}
+
+/* Current Price */
+.cvpm-current-price {
+    font-weight: 500;
+    color: #1d2327;
+}
+
+/* Product Count */
+.cvpm-product-count {
+    display: inline-block;
+    background: #f0f0f1;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Update Button */
+.cvpm-update-btn {
+    min-width: 80px;
+}
+
+.cvpm-update-btn:disabled {
+    cursor: not-allowed;
+}
+
+.cvpm-update-btn.updating {
+    opacity: 0.7;
+}
+
+/* Notices Container */
+#cvpm-notices {
+    margin: 15px 0;
+}
+
+#cvpm-notices .notice {
+    margin: 10px 0;
+}
+
+/* Row States */
+.cvpm-table tr.updating {
+    background-color: #f6f7f7 !important;
+    opacity: 0.7;
+}
+
+.cvpm-table tr.updated {
+    background-color: #edfaef !important;
+}
+
+.cvpm-table tr.error {
+    background-color: #fcf0f1 !important;
+}
+
+/* No Results */
+.cvpm-no-results {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.cvpm-no-results p {
+    margin: 10px 0;
+    color: #646970;
+}
+
+/* Pagination */
+.tablenav .tablenav-pages {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.tablenav-pages .page-numbers {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    text-decoration: none;
+    border: 1px solid #c3c4c7;
+    background: #f6f7f7;
+    color: #2271b1;
+    border-radius: 3px;
+}
+
+.tablenav-pages .page-numbers.current {
+    background: #2271b1;
+    border-color: #2271b1;
+    color: #fff;
+    font-weight: 600;
+}
+
+.tablenav-pages .page-numbers:hover:not(.current) {
+    background: #f0f0f1;
+    border-color: #8c8f94;
+}
+
+/* Loading Spinner */
+.cvpm-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #2271b1;
+    border-radius: 50%;
+    animation: cvpm-spin 1s linear infinite;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+@keyframes cvpm-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .cvpm-table .column-combination {
+        width: auto;
+    }
+    
+    .cvpm-table .column-regular-price,
+    .cvpm-table .column-sale-price,
+    .cvpm-table .column-current-price,
+    .cvpm-table .column-products,
+    .cvpm-table .column-actions {
+        width: auto;
+    }
+    
+    .cvpm-price-input {
+        max-width: 100%;
+    }
+    
+    .cvpm-search-form input[type="search"] {
+        width: 200px;
+    }
+}
