@@ -1,0 +1,342 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Centralized Variation Price Manager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-19 02:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.1; wp-6.9; php-8.2.29\n"
+"X-Domain: wc-centralized-variation-price-manager"
+
+#. %d: number of variations skipped
+#: includes/class-cvpm-background-processor.php:333
+#: includes/class-cvpm-admin.php:732
+msgid "%d already correct"
+msgid_plural "%d already correct"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %d: number of variations with different prices
+#: includes/class-cvpm-admin.php:390
+msgid "%d differ"
+msgstr ""
+
+#: includes/class-cvpm-background-processor.php:336
+msgid "%d invalid"
+msgstr ""
+
+#. %d: number of unique variation combinations
+#: includes/class-cvpm-admin.php:326
+msgid "%d unique variation combination found."
+msgid_plural "%d unique variation combinations found."
+msgstr[0] ""
+msgstr[1] ""
+
+#. %d: number of variations
+#: includes/class-cvpm-admin.php:360
+msgid "%d variation"
+msgid_plural "%d variations"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %d: number of variations
+#: includes/class-cvpm-admin.php:592
+msgid "%d variation already has the correct price."
+msgid_plural "%d variations already have the correct prices."
+msgstr[0] ""
+msgstr[1] ""
+
+#. %d: number of variations updated
+#: includes/class-cvpm-admin.php:720
+msgid "%d variation updated"
+msgid_plural "%d variations updated"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %s: WooCommerce plugin name
+#: wc-centralized-variation-price-manager.php:55
+#, php-format
+msgid "%s requires WooCommerce to be installed and active."
+msgstr ""
+
+#: includes/class-cvpm-background-processor.php:202
+msgid ", invalid: %d"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:348
+msgid "Actions"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:110
+msgid "Active Background Jobs"
+msgstr ""
+
+#: includes/class-cvpm-background-processor.php:395
+msgid "All variations updated successfully!"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:98
+msgid "An error occurred. Please try again."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:108
+msgid ""
+"Are you sure you want to cancel? Some variations may have already been "
+"updated."
+msgstr ""
+
+#. 1: batch number, 2: error message
+#: includes/class-cvpm-background-processor.php:307
+#, php-format
+msgid "Batch %1$d: Error - %2$s"
+msgstr ""
+
+#. 1: batch number, 2: skipped same price, 3: skipped invalid
+#: includes/class-cvpm-background-processor.php:199
+#, php-format
+msgid "Batch %1$d: No updates needed (already correct: %2$d%3$s)"
+msgstr ""
+
+#. 1: batch number, 2: count updated, 3: skip details
+#: includes/class-cvpm-background-processor.php:341
+#, php-format
+msgid "Batch %1$d: Updated %2$d variations%3$s"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:104 includes/class-cvpm-admin.php:465
+msgid "Cancel"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:107
+msgid "Cancelled"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:316
+msgid "Clear"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:105 includes/class-cvpm-admin.php:447
+#: includes/class-cvpm-admin.php:466
+msgid "Close"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:106
+msgid "Completed!"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:346
+msgid "Current Price"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:695
+msgid "Database error occurred."
+msgstr ""
+
+#. Author of the plugin
+msgid "Essam Barghsh"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:846
+msgid "Failed to cancel job."
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://esssam.com"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:813 includes/class-cvpm-admin.php:840
+msgid "Invalid job ID."
+msgstr ""
+
+#: includes/class-cvpm-background-processor.php:447
+msgid "Job cancelled by user."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:850
+msgid "Job cancelled."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:819
+msgid "Job not found."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:437
+msgid ""
+"Make sure you have variable products with variations in your WooCommerce "
+"store."
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Manage WooCommerce product variation prices from a centralized interface. "
+"Update prices for all products with the same variation combination at once."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:111
+msgid "No active background jobs."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:549
+msgid "No valid variations found."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:433
+msgid "No variation combinations found."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:513 includes/class-cvpm-admin.php:769
+msgid "No variations selected."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:483 includes/class-cvpm-admin.php:502
+#: includes/class-cvpm-admin.php:759 includes/class-cvpm-admin.php:807
+#: includes/class-cvpm-admin.php:834 includes/class-cvpm-admin.php:863
+msgid "Permission denied."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:99
+msgid "Please enter valid prices (numbers only)."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:794
+msgid "Price update started."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:102
+#, php-format
+msgid "Processing %1$d of %2$d variations"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:112
+msgid "Processing..."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:347
+msgid "Products"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:344
+msgid "Regular Price"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:370
+msgid "Regular price"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:526 includes/class-cvpm-admin.php:782
+msgid "Regular price cannot be negative."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:518 includes/class-cvpm-admin.php:774
+msgid "Regular price must be a valid number."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:345
+msgid "Sale Price"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:377
+msgid "Sale price"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:530 includes/class-cvpm-admin.php:786
+msgid "Sale price cannot be negative."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:522 includes/class-cvpm-admin.php:778
+msgid "Sale price must be a valid number."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:314
+msgid "Search"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:313
+msgid "Search variations..."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:312
+msgid "Search variations:"
+msgstr ""
+
+#. %d: number of variations
+#: includes/class-cvpm-background-processor.php:86
+msgid "Started processing %d variations..."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:455
+msgid "Starting..."
+msgstr ""
+
+#. %d: number of products
+#: includes/class-cvpm-background-processor.php:350
+msgid "Synced %d parent products"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:95
+msgid "This will update %d variation(s). Continue?"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:435
+msgid "Try a different search term or"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:97 includes/class-cvpm-admin.php:399
+msgid "Update"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:101 includes/class-cvpm-admin.php:446
+msgid "Updating Prices"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:96
+msgid "Updating..."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:343
+msgid "Variation Combination"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:53 includes/class-cvpm-admin.php:54
+msgid "Variation Prices"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:113
+msgid "variations"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:386
+msgid "Variations with different prices"
+msgstr ""
+
+#: includes/class-cvpm-admin.php:435
+msgid "view all variations"
+msgstr ""
+
+#. Name of the plugin
+#: includes/class-cvpm-admin.php:305
+msgid "WC Centralized Variation Price Manager"
+msgstr ""
+
+#: wc-centralized-variation-price-manager.php:100
+msgid ""
+"WC Centralized Variation Price Manager requires WooCommerce to be installed "
+"and active."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:103 includes/class-cvpm-admin.php:461
+msgid "You can close this page. Updates will continue in the background."
+msgstr ""
+
+#: includes/class-cvpm-admin.php:292
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
